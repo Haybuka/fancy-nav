@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+
+        .harmburger{
+            display: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 50px;
+          position: relative;
+        }
+        .nav{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 50px;
+        }
+        .nav li{
+            list-style-type: none;
+            /* position: relative; */
+            display: block;
+            cursor: pointer;
+        }
+        .height{
+            height: 100vh;
+        }
+        /* .nav li::after{
+            content: '';
+            display: block;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: all 0.3s ease-in;
+           
+        }
+        .nav li:hover::after{
+         width: 90%;
+         margin-top: 1px;
+         background-color: red;
+         border-radius: 10px;
+        } */
+        nav .logo{
+            grid-column: 1/4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav .search {
+            width: 500px;
+            grid-column: 5/11;
+        }
+        nav .other{
+            margin: 0 20px;
+        }
+        nav .other p{
+            margin: 0 10px;
+        }
+        nav .cart{
+            grid-column: 13;
+            margin: 0 10px;
+        }
+        
+        
+        nav input{
+            width: 100%;
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 1px 2px 2px black;
+        }
+        .cart-display{
+            width: auto;
+            height: 100vh;
+            box-shadow: -5px 20px 2px #00000073;
+            background-color: rgb(57, 125, 189);
+            padding: 10px ;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateY(-1000px);
+            transition: all 0.3s ease-in;
+        }
+        .open{
+            transform: translate(0) !important;
+        }
+        .cart-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.39);
+        }
+        .cart-header p span{
+           display: block;
+        }
+        .cart-close{
+            padding: 10px 20px;
+            border: 1px solid salmon;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cart-body{
+            padding: 0;
+            margin: 0;
+        }
+        .cart-body li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            padding: 10px 0;
+            background-color: #fff;
+        }
+        .cart-body li div{
+            margin: 0 10px;
+        }
+        .view-all{
+            text-align: center;
+            display: block;
+            background-color: rgb(255, 255, 255);
+            color: rgb(57, 125, 189);
+            text-decoration: none;
+            margin: 10px auto;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .item-detail span{
+            display: block;
+        }
+        .item-qty{
+            width: 90px;
+        }
+        .item-qty input{
+           padding: 5px 10px;
+           width: 100%;
+        }
+        nav .d-none{
+            display: none;
+        }
+        @media screen and (max-width:990px){
+           
+            nav{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+              position: relative;
+              align-items: center;
+            }
+            .harmburger{
+                display: block;   
+                padding: 10px;  
+                cursor: pointer;   
+            }
+            .harmburger span{
+                width: 30px;
+              
+                height: 3px;
+                background-color: rgb(0, 0, 0);
+                display: block;
+                margin-bottom: 5px;
+            }
+            .nav{
+                justify-content: space-around;
+                padding: 0;
+            }
+            nav .logo{
+                background-color: rgb(255, 255, 255);
+                box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.342);
+                display: block;
+                text-align: left;
+                padding: 15px;
+                height: 100vh;
+                transition: all 0.3s ease-in;
+                z-index: 10;
+            }
+            nav .logo h2{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 0;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.414);
+            }
+            .close-logo{
+                padding: 10px;
+                cursor: pointer;
+            }
+            nav .other{
+                margin: 0;
+                display: block;
+            }
+            nav .other p{
+               padding: 10px 0;
+               margin: 5px;
+            }
+            nav .logo{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 300px;
+                transform: translateX(-400px);
+            }
+            nav .d-none{
+                display: block;
+            }
+        }

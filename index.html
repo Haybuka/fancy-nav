@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>
+                <span>shopTopUp</span>
+                <span class="d-none close-logo">x</span>
+            </h2>
+            <div class="other">
+                <p>Account</p>
+                <p class="d-none">Orders</p>
+                <p class="d-none">Help</p>
+                <p class="d-none">Logout</p>
+
+              </div>
+        </div>
+        <div class="harmburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="search">
+            <form action="">
+                <input type="search" name="search" id="search">
+            </form>
+        </div>
+        <div class="cart">
+         <p class="cart-item">
+             cart
+         </p>
+         <span class="cart-count"></span>
+        </div>
+    </nav>
+    <section class="cart-display">
+        <div class="cart-header">
+            <p>
+                <span>
+                    Cart Items
+                </span>
+                <span>
+                    <b class="item-count">x</b> Items
+                </span>
+            </p>
+            <p class="cart-close">
+                close
+            </p>
+        </div>
+        <ul class="cart-body">
+            <li>
+                <div class="item-icon">
+                    Milo Icon
+                </div>
+                <div class="item-detail">
+                    <span>
+                     Milo Sachet
+                    </span>
+                    <span>
+                        remove
+                    </span>
+                </div>
+                <div class="item-qty"> 
+                   <input type="number" name="qty" id="qty">
+                </div>
+                <div class="item-amt">
+                     #2000
+                </div>
+            </li>
+            <li>
+                <div class="item-icon">
+                    Milo Icon
+                </div>
+                <div class="item-detail">
+                    <span>
+                     Milo Sachet
+                    </span>
+                    <span>
+                        remove
+                    </span>
+                </div>
+                <div class="item-qty"> 
+                   <input type="number" name="qty" id="qty">
+                </div>
+                <div class="item-amt">
+                     #2000
+                </div>
+            </li>
+        </ul>
+        <a href="/cart" class="view-all">view all</a>
+    </section>
+    <ul class="nav">
+       <li>Home</li>
+       <li>Browse</li>
+       <li>Your Items</li>
+       <li>myShop</li>
+       <!-- <li></li> -->
+    </ul>
+    <script src="index.js"></script>
+</body>
+</html>
