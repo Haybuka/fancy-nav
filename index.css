@@ -79,8 +79,8 @@ body{
         }
         .cart-display{
             width: auto;
-            height: 100vh;
-            box-shadow: -5px 20px 2px #00000073;
+            height: auto;
+            box-shadow: -5px 2px #00000073;
             background-color: rgb(57, 125, 189);
             padding: 10px ;
             position: absolute;
